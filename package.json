@@ -7,7 +7,7 @@
     "start": "NODE_ENV=production node index.js",
     "dev": "NODE_ENV=development nodemon index.js",
     "build:ui": "rm -rf dist && cd ../notes-frontend && npm run build && cp -r dist ../notes-backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push origin -u main",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push origin main",
     "lint": "eslint .",
     "test": "NODE_ENV=test jest --verbose --runInBand"
   },
